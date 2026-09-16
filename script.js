@@ -1,0 +1,1 @@
+const m=document.querySelector('.menu'),n=document.querySelector('.nav');if(m)m.onclick=()=>n.classList.toggle('open');document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab,.tabpane').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById(b.dataset.tab).classList.add('active')});
